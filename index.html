@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mago das Palavras Encantadas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Mago das Palavras Encantadas</h1>
+        <p>Encontre o <span class="highlight">Palíndromo Perfeito</span> na sua lista de palavras</p>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <label for="palavras">Digite as palavras mágicas (separadas por vírgula):</label>
+          <input type="text" id="palavras" placeholder="Ex: arara, fogo, radar, mesa, nuvem" />
+        </div>
+
+        <div class="buttons">
+          <button id="converterBtn" style="--clr: #8a2be2">
+            <span>REVELAR</span>
+            <i></i>
+          </button>
+
+          <button id="retornarBtn" style="--clr: #8a2be2">
+            <span>RETORNAR</span>
+            <i></i>
+          </button>
+        </div>
+
+        <div class="result-section">
+          <h2>Resultado:</h2>
+          <div id="resultado"></div>
+          <div id="processamento"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
